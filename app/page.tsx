@@ -1,4 +1,5 @@
-import Text from "@/components/ui/text/text";
+import Input from "@/components/ui/input";
+import Text from "@/components/ui/text";
 
 export default function Home() {
   return (
@@ -13,6 +14,20 @@ export default function Home() {
       >
         custom component :D
       </Text>
+      <div className="flex flex-col items-center gap-6 p-24">
+        <Input
+          label="Email"
+          variant="default"
+          type="email"
+          labelAnimate
+        />
+        <Input
+          label="Password"
+          type="password"
+          variant="default"
+          labelAnimate
+        />
+      </div>
     </>
   );
 }

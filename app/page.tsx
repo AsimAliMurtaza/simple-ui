@@ -1,5 +1,7 @@
+import Button from "@/components/ui/button";
 import Input from "@/components/ui/input";
 import Text from "@/components/ui/text";
+import { CheckCheckIcon, Icon, PiIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,6 +29,9 @@ export default function Home() {
           variant="default"
           labelAnimate
         />
+        <Button variant="default" animate leftIcon={<CheckCheckIcon name="submit" />} glow size="default">
+          Submit
+        </Button>
       </div>
     </>
   );
